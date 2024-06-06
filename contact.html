@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Lenskings Productions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="images/image1.png" alt="Logo" style="width: 200px; ;">
+            <h1>LENSKINGS PRODUCTIONS</h1>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us to discuss your project or schedule music lessons.</p>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="social-icons">
+            <a href="https://wa.me/254704742748" class="social-icon"><img src="whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://www.youtube.com/@lenskingsproductions" class="social-icon"><img src="youtube.png" alt="YouTube"></a>
+            <a href="https://www.tiktok.com/@lenskingsproductions" class="social-icon"><img src="tiktok.png" alt="TikTok"></a>
+            <a href="mailto:patrickirungumithamo@gmail.com" class="social-icon"><img src="gmail.png" alt="Gmail"></a>
+            <a href="https://www.instagram.com/parto_organist/" class="social-icon"><img src="instagram.png" alt="Instagram"></a>
+        </div> <img src="images/image1.png" alt="Logo" style="width: 100px; ;">
+       
+        <p>Lenskings Productions. <br>&copy; 2024<br>All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    });
+
+    function openTab(evt, tabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablink" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    function sendEmail(event) {
+        event.preventDefault(); // Prevent the default form submission
+        
+        // Get form values
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+        
+        // Create mailto link
+        var mailtoLink = 'mailto:patrickirungumithamo@gmail.com' +
+                         '?subject=' + encodeURIComponent('New Message from Lenskings Productions Website') +
+                         '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+        
+        // Redirect to mailto link
+        window.location.href = mailtoLink;
+        
+        // Show an alert or redirect to thank you page
+        alert('Form submitted successfully! Redirecting to email client...');
+    }
+</script>
+
+
+</body>
+</html>

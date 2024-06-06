@@ -1,0 +1,230 @@
+/* Resetting default margin and padding */
+body, h1, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8; /* Light gray background */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(254,144,0,1) 50%, rgba(0,0,0,1) 100%);
+  color: #000000; /* Golden text color */
+  text-align: center;
+  padding: 20px 0;
+}
+header div img:hover,
+header div  img.active {
+    background-color: #ffd000; /* Gold color */
+    color: #000; /* Black text */
+    padding: 20px 30px;
+    border-radius: 40px;
+}
+
+header h1 {
+  font-size: 60PX;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: #ffd000; /* Gold color */
+    color: #000; /* Black text */
+    padding: 30px 50px;
+    border-radius: 60px;
+}
+
+header, footer {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #000;
+  color: #ffd700;
+  padding: 1px 0px;
+  text-align: center;
+  border: #f8f8f8;
+  border-radius: 40px;
+ 
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+nav ul li a {
+  color: #ffd700; /* Golden text color for links */
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth transition for link color */
+}
+
+nav ul li a:hover {
+  color: #000; /* Black text color on hover */
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px 70px;
+  border-radius: 60px;
+  background: rgb(255,170,72);
+  background: linear-gradient(146deg, rgba(255,170,72,1) 0%, rgba(255,110,13,1) 0%, rgba(255,155,44,1) 0%);
+  margin-top: 10px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #222; /* Dark gray heading color */
+  font-size: 60PX;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div h3 {
+    background-color: #ffd000; /* Gold color */
+    color: #000000; /* Black text */
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 30px;
+}
+
+section p {
+  color: #000000; /* Slightly darker gray text color */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+/* Footer Styles */
+footer {
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(254,144,0,1) 50%, rgba(0,0,0,1) 100%);
+  color: #ffae00; /* Golden text color */
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+ div a:hover,
+div  a.active {
+    background-color: #ffd000; /* Gold color */
+    color: #000; /* Black text */
+    padding: 20px 30px;
+    border-radius: 40px;
+}
+div img:hover,
+div  img.active {
+    background-color: #ffd000; /* Gold color */
+    color: #000; /* Black text */
+    padding: 20px 30px;
+    border-radius: 40px;
+}
+
+
+footer p {
+  font-size: 20px;
+  font-style: oblique;
+  
+}
+/* Additional CSS for contact form styling */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #ffd700; /* Golden border color on focus */
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+button[type="submit"] {
+  background-color: #ffd700; /* Golden button background color */
+  color: #222; /* Dark gray text color */
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #cc9900; /* Slightly darker golden color on hover */
+}
+/* Additional CSS for footer social media icons */
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.social-icon img {
+  width: 50px; /* Increase icon size */
+  height: 50px; /* Increase icon size */
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.2); /* Increase size on hover */
+}
+
+.container {
+  text-align: center; /* Center the company information */
+}
+
+.container p {
+  margin-top: 20px; /* Add space between social icons and company information */
+}
