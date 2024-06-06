@@ -284,7 +284,7 @@ body {
 header {
   background: rgb(2,0,36);
   background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(254,144,0,1) 50%, rgba(0,0,0,1) 100%);
-  color: #000000; /* Golden text color */
+  color: #ffd700; /* Golden text color */
   text-align: center;
   padding: 20px 0;
 }
