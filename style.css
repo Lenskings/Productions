@@ -267,3 +267,44 @@ body, h1, p, ul, li {
     }
   }
   
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8; /* Light gray background */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(254,144,0,1) 50%, rgba(0,0,0,1) 100%);
+  color: #000000; /* Golden text color */
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  /* Additional responsive styles here */
+}
+
+/* Adjustments for even smaller screens */
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 5px;
+  }
+
+  /* Additional responsive styles here */
+}
